@@ -42,3 +42,18 @@ INSERT INTO `t_book` VALUES ('3', 'Head First Java中文版(深入浅出Java)', '计算机
 INSERT INTO `t_book` VALUES ('4', 'java虚拟机规范', '计算机-虚拟机-java', 'ISBN-123456', 'java虚拟机规范', 'java虚拟机规范', '52.30', '0.00', '100.00', '2019-01-19 16:18:25', '2019-01-19 16:18:19');
 INSERT INTO `t_book` VALUES ('5', 'DevOps实践指南', '计算机-DevOps', 'ISBN-001542', 'DevOps实践指南', 'DevOps实践指南', '86.30', '0.00', '100.00', '2019-01-19 16:18:25', '2019-01-19 16:18:19');
 INSERT INTO `t_book` VALUES ('6', 'Spring Cloud与Docker微服务架构实战（第2版）', '计算机-编程开发-微服务', 'ISBN-4001542', 'Spring Cloud与Docker微服务架构实战（第2版）', 'Spring Cloud与Docker微服务架构实战（第2版）', '86.30', '0.00', '100.00', '2019-01-19 16:18:25', '2019-01-19 16:18:19');
+-- ----------------------------
+-- Table structure for `t_book_order`
+-- ----------------------------
+DROP TABLE IF EXISTS `t_book_order`;
+CREATE TABLE `t_book_order` (
+  `order_id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '编号',
+  `order_no` varchar(100) NOT NULL COMMENT '订单号',
+  `total_price` DECIMAL(12,2) NOT NULL COMMENT '订单总价',
+  `buyer_address` varchar(300) NOT NULL COMMENT '买家地址',
+  `buyer_phone_no` varchar(20) NOT NULL COMMENT '买家电话',
+  `seller_address` varchar(300) NOT NULL COMMENT '卖家地址',
+  `seller_phone_no` varchar(20) NOT NULL COMMENT '卖家电话',
+  `out-of-pocket` DECIMAL(12,2) NOT NULL COMMENT '实付',
+  PRIMARY KEY (`order_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COMMENT='书籍订单表';
