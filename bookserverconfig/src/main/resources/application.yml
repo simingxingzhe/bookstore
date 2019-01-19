@@ -1,0 +1,15 @@
+server:
+  port: 8004
+spring:
+  application:
+    name: book-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/simingxingzhe/configFile.git
+          #uri: file:///E:\GitHubRepository\configFile\config-info
+          search-paths: book-manage-server
+          #当访问的仓库是公有的时候可以不用输入账号密码，如果访问的是私有库，必须校验账号密码
+          #Bookname: testLogin
+          #password: testLogin
