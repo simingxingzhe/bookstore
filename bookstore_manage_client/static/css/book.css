@@ -1,0 +1,52 @@
+.book{
+        margin: 32px;
+        padding: 32px;
+        background: #fff;
+        border: 1px solid #dddee1;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .book-image{
+        width: 25%;
+        height: 550px;
+        float: left;
+        text-align: center;
+    }
+    .book-image img{
+        height: 50%;
+    }
+    .book-info{
+        width: 75%;
+        padding: 150px 0 250px;
+        height: 150px;
+        float: left;
+        text-align: center;
+    }
+    .book-cost{
+        color: #f2352e;
+        margin: 8px 0;
+    }
+    .book-add-cart{
+        display: inline-block;
+        padding: 8px 64px;
+        margin: 8px 0;
+        background: #2d8cf0;
+        color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .book-desc{
+        background: #fff;
+        margin: 32px;
+        padding: 32px;
+        border: 1px solid #dddee1;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .book-desc img{
+        display: block;
+        width: 50%;
+        margin: 32px auto;
+        padding: 32px;
+        border-bottom: 1px solid #dddee1;
+    }
